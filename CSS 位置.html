@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS 位置</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/test.css">
+</head>
+<body>
+
+	<div class="wrap">
+				
+		<div class="header">
+			<h1><a href="CSS Div與CSS Span.html" target="blank">Sigma's HTML</a></h1>
+		</div>
+
+		<div class="sidebar">
+			<ul>
+				<li><a href="CSS Div與CSS Span.html" target="blank">CSS Div 與 CSS Span</a></li>
+				<li><a href="CSS 邊界.html" target="blank">CSS 邊界</a></li>
+				<li><a href="CSS 表格.html" target="blank">CSS 表格</a></li>
+				<li><a href="CSS 位置.html" target="blank">CSS 位置</a></li>
+				<li><a href="CSS 連接.html" target="blank">CSS 連接</a></li>
+			</ul>
+		</div>
+
+		<div class="content">
+		<h2>
+			<a href="CSS Div與CSS Span.html">CSS 教學</a> >  位置
+		</h2>	
+		
+		<p>
+			在 CSS 中常見的位置 (position) 屬性有以下幾種：
+		</p>	
+
+		<p>
+			<li>position</li>
+			<li>top</li>
+			<li>right</li>
+			<li>left</li>
+			<li>bottom</li>
+			<li>overflow</li>
+			<li>z-index</li>
+		</p>
+
+		<p>
+			<h3>
+				position
+			</h3>
+		</p>
+
+		<p>
+			<b>position</b> 屬性制定出要用哪一類的位置。可能的值有：
+		</p>
+
+		<p>
+			<ul>
+				<li>
+					<b>static (預設值)</b>: 這代表元素會被放在預設的地方。如果 position 的值是被設定為 statics 的話，那 top、bottom、left、和 right 的值就都沒有意義了。
+				</li>
+				<li>
+					<b>absolute</b>: 這代表元素會被放在瀏覽器內的某個位置 (依 top、bottom、left、和 right 的值而定)。當使用者將網頁往下拉時，元素也會跟著改變位置。
+				</li>
+				<li>
+					<b>relative</b>: 這代表元素被放的地方將會與預設的地方有所不同。不同的程度是依照 top、bottom、left、和 right 的值而定。
+				</li>
+				<li>
+					<b>fixed</b>: 這代表元素會被放在瀏覽器內的某個位置 (依 top、bottom、left、和 right 的值而定)。當使用者將網頁往下拉時，元素的位置不會改變。
+				</li>
+			</ul>
+		</p>
+
+		<p>
+			<b>
+				<h3>
+					top, right, bottom, left
+				</h3>				
+			</b>
+		</p>
+
+		<p>
+			每一個方向 <b>(top, right, bottom, left)</b> 的位置值可以是長度、百分比、或是 auto。
+		</p>
+
+		<p>
+			讓我們來看個例子：
+		</p>
+
+		<p>
+			CSS 碼：
+		</p>
+
+		<p class="gray_block">
+				div { 
+			<br>  &nbsp;background-color:#FF00FF; 
+			<br>  &nbsp;width:500px; 
+			<br>  &nbsp;height:60px; 
+			<br>}
+			<br>p { 
+			<br>  &nbsp;position:relative; 
+			<br>  &nbsp;top:10px; 
+			<br>  &nbsp;left:50px; 
+			<br>}
+		</p>
+
+		<p>
+			在這哩，以下的 HTML 碼，
+		</p>
+
+		<p class="gray_block">
+			&lt;div&gt;
+  			<br> &nbsp; &lt;p&gt;舉例文字。 
+			<br> &lt;/div&gt;
+		</p>
+
+		<p>
+			會顯示出，
+		</p>
+
+		<div style="background-color:#FF00FF;width:100%;height:60px;">
+			<p style="position:relative;top:10px;left:50px;">
+				舉例文字。
+			</p>
+		</div>
+
+		<p>
+			請注意以上文字的位置：它是在離粉紅色方塊上面 10px，及左邊 50px 的地方。
+		</p>
+
+		<p>
+			<b>
+				<h3>
+					overflow
+				</h3>
+			</b>
+		</p>
+
+		<p>
+			<b>overflow</b> 屬性是用來設定當內容放不下時的處理方式。可能的值包括：
+		</p>
+
+		<p>
+			<ul>
+				<li>
+					<b>visible</b>: 內容完全呈現，不管放得下放不下。
+				</li>
+				<li>
+					<b>hidden</b>: 放不下的內容就不顯示出來。
+				</li>
+				<li>
+					<b>scroll</b>: 無論內容放得下放不下，都加入上下捲軸及左右捲軸的功能。
+				</li>
+				<li>
+					<b>auto</b>: 當內容放不下時，加上捲軸的功能。
+				</li>
+			</ul>
+		</p>
+
+		<p>
+			以上這四個值的例子如下：
+		</p>
+		<center>
+			<p>
+				<table border=0 cellpadding=10>
+					<tr>
+						<td>						
+							<center><b>auto</b></center>
+								<div style="text-align:left; width:200px; height:70px; border:1px solid #999; overflow:auto;">
+									我們用這一區來看不同的 overflow 值展現出來會有什麼不一樣。
+									<p>這裡展現的值是 auto。</p> 
+								</div>
+						</td>
+					</tr>
+				</table>
+			</p>
+
+			<p>
+				<table border=0 cellpadding=10>
+					<tr>
+						<td>						
+								<center><b>hidden</b></center>
+								<div style="text-align:left; width:200px; height:70px; border:1px solid #999; overflow:hidden;">
+									我們用這一區來看不同的 overflow 值展現出來會有什麼不一樣。
+									<p>這裡展現的值是 hidden。</p> 
+								</div>
+						</td>
+					</tr>
+				</table>
+			</p>
+
+			<p>
+				<table border=0 cellpadding=10>
+					<tr>
+						<td>						
+								<center><b>visible</b></center>
+								<div style="text-align:left; width:200px; height:70px; border:1px solid #999; overflow:visible;">
+									我們用這一區來看不同的 overflow 值展現出來會有什麼不一樣。
+									<p>這裡展現的值是 visible。</p> 
+								</div>
+						</td>
+					</tr>
+				</table>
+			</p>
+
+			<p>
+				<table border=0 cellpadding=10>
+					<tr>
+						<td>						
+								<center><b>scroll</b></center>
+								<div style="text-align:left; width:200px; height:70px; border:1px solid #999; overflow:scroll;">
+									我們用這一區來看不同的 overflow 值展現出來會有什麼不一樣。
+									<p>這裡展現的值是 scroll。</p>
+								</div>
+						</td>
+					</tr>
+				</table>
+			</p>
+		</center>
+
+		<p>
+			<h3>
+				Z-index
+			</h3>
+		</p>
+
+		<p>
+			z-index 屬性是用來決定元素重疊的順序。換言之，當兩個元素有重疊的情況時，z-index 值將會決定哪一個元素在上面。z-index 值比較大個元素會被放在上面。
+		</p>
+
+		<p>
+			舉例來說，假設我們有以下的 CSS 碼：
+		</p>
+
+		<p class="gray_block">
+			#redblock { 
+			<br>  &nbsp;z-index: 1; 
+			<br>  &nbsp;position: 
+			<br>  &nbsp;absolute; 
+			<br>  &nbsp;width:80px; 
+			<br>  &nbsp;height:100px; 
+			<br>  &nbsp;top:20px; 
+			<br>  &nbsp;left:20px; 
+			<br>  &nbsp;border: 1px solid #FFF; 
+			<br>  &nbsp;background-color: #FF0000; 
+			<br>} 
+			<br>	
+			#pinkblock { 
+			<br>  &nbsp;z-index: 2; 
+			<br>  &nbsp;position: absolute; 
+			<br>  &nbsp;width:100px; 
+			<br>  &nbsp;height:80px; 
+			<br>  &nbsp;top:50px; 
+			<br>  &nbsp;left:50px; 
+			<br>  &nbsp;border: 1px solid #FFF; 
+			<br>  &nbsp;background-color: #FF00FF; 
+			<br>}
+		</p>
+
+		<p>
+			以下的 HTML 碼，
+		</p>
+
+		<p class="gray_block">
+			&lt;div id="redblock"&gt;&lt;/div&gt;  <br>
+			&lt;div id="pinkblock"&gt;&lt;/div&gt;
+		</p>
+
+		<p>
+			會顯示出，
+		</p>
+
+		<p>
+			<table border=2 class="bigspace" cellpadding=10>
+				<tr>
+					<td>
+						<div style="z-index: 1; position: relative; width:80px; height:100px; top:30px; left:20px; border: 1px solid #FFF; background-color: #FF0000;">
+							
+						</div>
+						<div style="z-index: 2; position: relative; width:100px; height:80px; top:0px; left:50px; border: 1px solid #FFF; background-color: #FF00FF;">
+							
+						</div>
+					</td>
+				</tr>
+			</table>
+		</p>
+
+		<p>
+			從以上可見，粉紅色方塊 (pinkblock) 的 z-index 值 (2) 比紅色方塊 (redblock) 的 z-index 值 (1) 高，因此粉紅色方塊在上面。
+		</p>
+		
+		<center>
+			下一頁：<a href="CSS 連接.html">CSS 連接</a>
+		</center>
+
+		<br><br><br><br><br><br>
+
+		<center>
+			<h4>Copyright © 2016   <a href="CSS Div與CSS Span.html">1keydata.com</a>    版權所有</h4> 
+		</center>
+
+
+	</div>
+
+	</div>
+	
+</body>
+</html>

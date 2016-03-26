@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Div 與 CSS Span</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/test.css">
+</head>
+<body>
+
+	<div class="wrap">
+				
+		<div class="header">
+			<h1><a href="CSS Div與CSS Span.html" target="blank">Sigma's HTML</a></h1>
+		</div>
+
+		<div class="sidebar">
+			<ul>
+				<li><a href="CSS Div與CSS Span.html" target="blank">CSS Div 與 CSS Span</a></li>
+				<li><a href="CSS 邊界.html" target="blank">CSS 邊界</a></li>
+				<li><a href="CSS 表格.html" target="blank">CSS 表格</a></li>
+				<li><a href="CSS 位置.html" target="blank">CSS 位置</a></li>
+				<li><a href="CSS 連接.html" target="blank">CSS 連接</a></li>
+			</ul>
+		</div>
+
+		<div class="content">
+			<h2>
+			<a href="CSS Div與CSS Span.html" target="_blank">CSS 教學</a>  >  CSS Div 與 CSS Span
+		</h2>
+
+		<p>
+			<h3>
+				Div
+			</h3>
+		</p>
+
+		<p>
+			Div 這個標籤目的是將內容分為不同的區域，而每一個區域可以根據 CSS 中的宣告而有自己的樣式。Div 是一個區塊級容器 (block-level container)，這代表在 &lt;/div&gt; 標籤後會換行。
+		</p>
+
+		<p>
+			舉例來說，如果我們有以下的 CSS 樣式：
+		</p>
+
+		<p class="gray_block">
+			.large { <br>
+			&nbsp;color: #00FF00; <br> 
+	  		&nbsp;font-family:arial; <br>
+	  		&nbsp;font-size: 4pt; <br> 
+			}
+		</p>
+
+		<p>
+			以下的HTML碼，
+		</p>
+
+		<!--  &nbsp;代表空格   &lt;代表小於   &gt;代表大於-->
+		<p class="gray_block">
+			&lt;div class="large"&gt; <br> 
+	  		&nbsp;這是 DIV 範例。 <br> 
+			&lt;/div&gt;
+		</p>
+
+		<p>
+			就會顯現為，
+		</p>
+
+		<p class="large_lightgreen">
+			&nbsp;這是DIV範例。
+		</p>
+
+		<p>
+			<h3>
+				Span
+			</h3>
+		</p>
+
+		<p>
+			Span 跟 Div 類似的地方是，這兩個標籤的目的都是將內容分為不同的區域。不同的是，Span 可以涵蓋更細層的元素。所以，我們甚至可以用&lt;span&gt;來調整單一文字的樣式。
+			另外，在 &lt;/span &gt; 之後並不會&lt;br&gt;換行。
+		</p>
+
+		<p>
+			舉例來說，如果我們有以下的 CSS 樣式：
+		</p>
+
+		<p class="gray_block">
+			.largefont { <br> 
+	  		&nbsp;color: #0066FF; <br>
+	  		&nbsp;font-family:arial; <br>
+	  		&nbsp;font-size: 6px; <br>
+			}		
+		</p>
+
+		<p>
+			以下的 HTML 碼，
+		</p>
+
+		<p class="gray_block">
+			Span 不是&lt;span class="largefont"&gt;區塊級的&lt;/span&gt;.
+		</p>
+
+		<p>
+			就會顯現為，
+		</p>
+
+		<p>
+			Span 不是 <span class="large_lightblue">區塊級的</span>
+		</p>
+		
+		<center>
+			下一頁：<a href="CSS 邊界.html">CSS 邊界</a>
+		</center>
+
+		<br><br><br><br><br><br>
+
+		<center>
+			<h4>Copyright © 2016   <a href="CSS Div與CSS Span.html">1keydata.com</a>    版權所有</h4> 
+		</center>
+
+
+	</div>
+
+	</div>
+	
+</body>
+</html>

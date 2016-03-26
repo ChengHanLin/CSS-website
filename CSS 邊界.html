@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS 邊界</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/test.css">
+</head>
+<body>
+
+	<div class="wrap">
+				
+		<div class="header">
+			<h1><a href="CSS Div與CSS Span.html" target="blank">Sigma's HTML</a></h1>
+		</div>
+
+		<div class="sidebar">
+			<ul>
+				<li><a href="CSS Div與CSS Span.html" target="blank">CSS Div 與 CSS Span</a></li>
+				<li><a href="CSS 邊界.html" target="blank">CSS 邊界</a></li>
+				<li><a href="CSS 表格.html" target="blank">CSS 表格</a></li>
+				<li><a href="CSS 位置.html" target="blank">CSS 位置</a></li>
+				<li><a href="CSS 連接.html" target="blank">CSS 連接</a></li>
+			</ul>
+		</div>
+
+		<div class="content">
+			<h2>
+			<a href="CSS Div與CSS Span.html" target="_blank">CSS 教學</a>  >  邊界
+		</h2>
+		  
+		<p style="margin-top: 30px">
+			如我們在<a href="http://www.1keydata.com/css-tutorial/tw/box-model.php" target="blank">盒子模式</a>那一頁看到的，邊界 (margin) 是在邊框之外，並且是用來設定各個元素之間的距離。一個盒子有四個邊，所以我們可以對這四個邊逐一設定：
+		</p>
+
+		<li>margin-top (上邊界)</li>
+		<li>margin-right (右邊界)</li>
+		<li>margin-bottom (下邊界)</li>
+		<li>margin-left (左邊界)</li>
+
+		<p>
+			第五個屬性，<a href="http://www.1keydata.com/css-tutorial/tw/margin.php#margin" target="blank">margin</a> ，是用來作為同時設定四個邊的捷徑屬性。
+		</p>
+
+		<p>
+			有三種方式可以設定邊界，分別為長度、百分比、以及 'auto'。我們來看以下的例子：
+		</p>
+
+		<p class="gray_block">
+			#container { <br>
+			margin-top:5px; <br>
+			margin-left:10%; <br>
+			margin-right:auto; <br>
+			margin-bottom:20px; <br>
+			border: 1px solid 000000; <br>
+			}
+		</p>
+
+		<p>
+			以下的 HTML 碼，
+		</p>
+
+		<p class="gray_block">
+			&lt;div id="container"&gt; <br>
+			這是邊界的例子。 <br>
+			&lt;/div&gt; 
+		</p>
+
+		<p>
+			會顯示為，
+		</p>
+
+		<table>
+			<tr>
+				<td style="background-color:#CCFFCC ; height:78px; width:750px;">
+					<div style="margin-top:5px; margin-left:10%; margin-right:auto; margin-bottom:20px; border: 1px solid #000000;">
+						這是邊界的例子。
+					</div>
+				</td>				
+			</tr>	
+		</table>
+
+		<p>
+			在這裡，上邊界為 5px，左邊界為 10%，下邊界為 20px。
+		</p>
+
+		<p>
+			<h3>
+				邊界捷徑
+			</h3>			
+		</p> 
+
+		<p>
+			所有四個邊的邊界可以同時由 margin 屬性設定。它的語法如下：
+		</p>
+
+		<p>
+			<font color="#006600">
+				margin: [上面邊界值] [右邊邊界值] [下面邊界值] [左邊邊界值]
+			</font>
+		</p>
+
+		<p>
+			在這裡，順序非常重要。第一個值一定是上邊界的值，第二個值一定是右邊界的值，第三個值一定是下邊界的值，而第四個值一定是左邊界的值。
+		</p>
+
+		<center>
+			下一頁：<a href="CSS 表格.html">CSS 表格</a>
+		</center>
+
+		<br><br><br><br><br><br>
+
+		<center>
+			<h4>Copyright © 2016   <a href="CSS Div與CSS Span.html">1keydata.com</a>    版權所有</h4> 
+		</center>
+
+		</div>
+
+	</div>
+	
+</body>
+</html>
